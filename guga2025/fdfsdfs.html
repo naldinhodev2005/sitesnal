@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Página do Amigo</title>
+  <style>
+    body {
+      background-color: #121212;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-template-rows: auto auto auto;
+      gap: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .foto-seria, .foto-zoeira, .resumo, .musicas, .desenho {
+      background-color: #1e1e1e;
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    .foto-seria img, .foto-zoeira img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .foto-seria {
+      grid-row: 1 / span 2;
+    }
+
+    .foto-zoeira {
+      grid-column: span 2;
+      text-align: center;
+    }
+
+  
+
+    h2 {
+      margin-top: 0;
+      font-size: 1.2em;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="foto-seria">
+      <h2>Guga</h2>
+      <img src="gu5.jpg" alt="Foto séria do amigo">
+    </div>
+
+    <div class="resumo">
+      <h2>Quem é ele?</h2>
+      <p>Escreva aqui um pequeno texto descrevendo seu amigo.</p>
+    </div>
+
+    <div class="musicas">
+      <h2>Minhas Músicas</h2>
+      <ul>
+        <li>Música 1</li>
+        <li>Música 2</li>
+        <li>Música 3</li>
+      </ul>
+    </div>
+
+    <div class="foto-zoeira">
+      <h2>Nos tempos livres</h2>
+      <img src="gu6.jpg" alt="Foto engraçada do amigo">
+    </div>
+
+   
+  </div>
+</body>
+</html>
